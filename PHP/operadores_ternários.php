@@ -13,9 +13,11 @@ $mensagem = ($nome == "Anna") ? "Olá, Anna!" : "Olá, visitante!";
 echo $mensagem; //No site vai parecer "Olá, Anna!"
 
 echo "<br/>";
-
+//agora foi feito uma verificação com login
 $is_logged_in = true;
 $mensagem = $is_logged_in ? 'Bem-vindo de volta!' : 'Por favor, faça login!';
 echo $mensagem;
+
+echo "<br/>";
 
 ?>
