@@ -1,13 +1,32 @@
 <?php
 
-echo "<pre>";
-print_r($_POST);
-echo "</pre>";
-echo "<hr>";
+$usuario_autenticado = false;
 
-echo "E-mail: ";
-echo $_POST['email'];
-echo "<br>";
-echo $_POST['senha'];
-?> 
+//aqui é onde tem os usuarios cadastrados
+//foi adicionado mais dois usuarios aluno e suporte
+$usuario_cadastrado = [
+    ['email' => 'admin@senail.br',
+    'senha' => 12345],
+    ['email' => 'aluno@senail.br',
+    'senha' => 'abcde'],
+    ['email' => 'suporte@senail.br',
+    'senha' => 12345],
+];
+//aqui foi usado o foreach para verificar se o usuario esta autenticado
+foreach($usuario_cadastrado as $user){
+    if($user['email'] == $_POST['email'] && $user['senha'] == $_POST['senha']){
+        $usuario_autenticado = true;
+    }
+}
+//aqui se o usuario for autenticado ele ira para o painel.php
+if($usuario_autenticado == true){
+    echo "Usuário autenticado com sucesso";
+    header('Location: painel.php');
+
+    //aqui ele permanecera na pagina de login 
+}else{
+    //echo "Usuário ou senha incorreto";
+    header('Location: index.php?login=erro');
+}
+?>
 
