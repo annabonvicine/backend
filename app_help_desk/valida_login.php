@@ -7,13 +7,13 @@ $usuario_autenticado = false;
 //aqui é onde tem os usuarios cadastrados
 //foi adicionado mais dois usuarios aluno e suporte
 $usuario_cadastrado = [
-    ['email' => 'admin@senail.br',
+    ['email' => 'admin@senai.br',
     'senha' => 12345],
 
-    ['email' => 'aluno@senail.br',
+    ['email' => 'aluno@senai.br',
     'senha' => 'abcde'],
 
-    ['email' => 'suporte@senail.br',
+    ['email' => 'suporte@senai.br',
     'senha' => 12345],
 ];
 

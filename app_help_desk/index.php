@@ -12,7 +12,7 @@
       
         <nav class="navbar navbar-dark bg-dark">
           <a class="navbar-brand" href="#">
-            <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="help_logo.png" width="38" height="35"  class="d-inline-block align-top" alt=""> 
             App Help Desk
           </a>
         </nav>
@@ -24,7 +24,7 @@
                 <div class="card-login">
                   <div class="card">
                     <div class="card-header">
-                    <center>Login</center>
+                    <center> <h4>Login</h4></center>
                     </div>
                     <div class="card-body">
                       <form action="valida_login.php" method="POST">
@@ -62,8 +62,8 @@
             </div>
           </div>
           <div class="textland">
-            <center><h4>Bem-vindo ao Help Desk </h4></center>
-            <p>Sua solução rápida e eficiente para suporte técnico! Aqui, você pode abrir chamados de forma simples e direta, garantindo que sua equipe de TI esteja sempre pronta para ajudar.</p>
+            <center><h3>Bem-vindo ao Help Desk </h3></center>
+            <center><p>Sua solução rápida e eficiente para suporte técnico! Aqui, você pode abrir chamados de forma simples e direta, garantindo que sua equipe de TI esteja sempre pronta para ajudar.</p></center>
           </div>
         </div> 
 

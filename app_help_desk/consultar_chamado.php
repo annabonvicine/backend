@@ -2,6 +2,18 @@
 require_once("login.php");
 ?>
 
+<?php
+$arquivo = fopen('registro.txt', 'r');
+
+while(!feof($arquivo)){
+  $registro = fgets($arquivo);
+  $chamados[] = $registro;
+}
+
+echo"<pre>";
+print_r($chamados);
+echo"</pre>";
+?>
 
 <html>
   <head>
@@ -17,7 +29,7 @@ require_once("login.php");
 
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      <img src="help_logo.png" width="38" height="35"  class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
       <ul class="navbar-nav">
@@ -37,7 +49,17 @@ require_once("login.php");
             </div>
             
             <div class="card-body">
-              
+              <!--aqui foi feito ma função para aparecer os chamados que foram feitos em abrir chamado  -->
+            <?php
+                foreach($chamados as $chamado){
+                $chamados_dados = explode('#',$chamado);
+
+                echo'<pre>';
+                print_r($chamados_dados);
+                echo'</pre>';
+              }
+            
+            ?>
               <div class="card mb-3 bg-light">
                 <div class="card-body">
                   <h5 class="card-title">Título do chamado...</h5>
