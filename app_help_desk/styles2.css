@@ -1,0 +1,158 @@
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+/*cores*/
+:root{
+    --preto:#000000;
+    --amarelo:#DDCD1D;
+    --roxo1:#6D19AE;
+    --roxo2:#7305C7;
+    --roxo3:#210934;
+    --branco:#FFFFFF;
+    --rosa:#FFADFC;
+    --lilas:#DDA0DD;
+    --roxo4:#4B0082;
+    --roxo5:#d6acd6;
+    --roxo6:#8B008B;
+    --roxo7:#9400D3;
+    --magenta:#FF00FF;
+    --roxo8:#FFF5EE;
+    --cinza:#A9A9A9;
+    --rosa2:#af0685;
+    --roxo9:#9e00dd;
+}
+
+
+#cabeca{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+    text-align: center;
+    /* background-color: var(--roxo9); */
+    color: var(--branco);
+    height: 130px;
+    box-shadow: 0px,4px,8px,rgba(0,0,0,0.1);
+    background: linear-gradient(to right, #9b9bf3,#ce77ce,#9400D3 );
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    padding: 15px 0;
+    border-bottom: 2px solid #8A2BE2;
+    box-shadow: 0 4px 2px -4px gray;
+    border-radius: 5px;
+    /* align-items: center; */
+    justify-content:space-evenly;
+   
+
+}
+
+#formulario{
+    background: linear-gradient(#4B0082,#9400D3,#BA55D3,#FF00FF);
+    width: 325px;
+    height: 400px;
+    align-items: center;
+    color: var(--branco);
+    justify-content: center;
+    align-items: center; 
+    padding: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border:1px solid, var(--amarelo); 
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+    text-align: center; 
+    
+}
+
+#Formularioimg{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+img{
+    justify-content:flex-end;
+    align-self:last baseline;
+    border-top-left-radius: 95px;
+    border-bottom-right-radius: 155px;
+    border: 2px solid var(--rosa2);
+   
+}
+#main{
+    /* background-color: var(--roxo5); */
+    background-image: url(1.jpg);
+}
+
+body{
+    background:linear-gradient(#d8d8d8,#D8BFD8,#1e0830);
+}
+#pe{
+    background-color: var(--roxo3);
+    height: 25px;
+    color: var(--branco);
+}
+
+button{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 40px;
+    width: 80px;
+    background-color:var(--roxo3);
+    color: var(--branco);
+    border:none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:active {
+    background-color: #DDCD1D;
+}
+button:hover{
+    background:linear-gradient(#7305C7,#210934);
+}
+#nome:focus{
+    background-color: rgb(243, 185, 245);
+    border: 3px solid rgb(111, 72, 250);
+}
+
+#telefone:focus{
+    background-color: rgb(243, 185, 245);
+    border: 3px solid rgb(111, 72, 250);
+}
+
+#email:valid{
+color: blue
+}
+
+#email:invalid{
+    color: darkred;
+}
+cabeca h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+.botao-sair{
+    display: inline-block;
+    /* padding: 10px 20px; */
+    background-color: rgb(245, 2, 136);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold ;
+    transition: all 0.5s;
+    height: 65px;
+    
+}
+  
+.botao-sair:hover {
+    background-color: rgb(234, 2, 2);
+    color: white ;
+    transform: scale(1.1);
+  }

@@ -13,7 +13,7 @@ require_once("login.php");
 
   <body>
         <nav class="navbar navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="entrar.php">
           <img src="help_logo.png" width="38" height="35"  class="d-inline-block align-top" alt="">
             App Help Desk
           </a>

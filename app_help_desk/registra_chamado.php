@@ -15,7 +15,7 @@ $texto = $titulo. '#' .$categoria. '#' .$descricao.PHP_EOL;
 
 echo $texto;
 
-$arquivo = fopen('registro.txt', 'a');
+$arquivo = fopen('../../app_help_desk/registro.txt', 'a');
 
 fwrite($arquivo, $texto);
 
